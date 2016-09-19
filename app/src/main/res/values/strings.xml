@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PermissonDemo</string>
+    <string name="base_permission">APP启动需要获取手机信息，访问文件，使用账户信息等权限</string>
+</resources>
