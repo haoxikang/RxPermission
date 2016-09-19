@@ -5,6 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         classpath 'com.android.tools.build:gradle:2.2.0-rc1'
         classpath 'me.tatarka:gradle-retrolambda:3.2.4'
         // NOTE: Do not place your application dependencies here; they belong
@@ -20,4 +21,13 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+allprojects {
+    tasks.withType(Javadoc) {
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }
 }

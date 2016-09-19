@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.348476129' //Brioal替换成你自己的Github用户名
 android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
